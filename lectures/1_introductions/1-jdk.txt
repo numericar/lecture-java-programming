@@ -1,0 +1,17 @@
+
+    :: Java Development Kit (JDK)
+        - โดยจะประกอบด้วย Compiler และ Runtime Environment ซึ่งช่วยให้เราสามารถเขียน Java และ Execute ได้
+
+    :: Java Runtime Environment (JRE)
+        - เป็นส่วนหนึ่งของ JDK
+        - มี Standard Java Library
+
+    :: Java Virtual Machine (JVM)
+        - ในการ Execute Java Program เราจำเป็นต้องใช้ JVM ซึ่งเป็นส่วนหนึ่งของ JRE
+        - ใช้ในการ Execute java code
+
+    :: javac
+    ใช้ในการสั่งให้ Compiler (เป็นส่วนหนึ่งของ JDK) แปรงไฟล์ .java เป็น .class 
+
+    :: .class 
+    เกิดจากการ compile จาก javac โดยจะถูก JRE และ JVM นำไปใช้ต่อ

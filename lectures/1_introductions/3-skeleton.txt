@@ -1,0 +1,19 @@
+
+    :: Skeleton of java program
+
+    import java.lang.*;
+
+    class Main {
+        public static void main(String[] args) {
+            System.out.println("Hello World");
+        }
+    }
+
+    - code ทั้งหมดจะถูกเก็บไว้ใน .java
+    - java.lang เป็น package ของ java
+    - ทุก java program จะอยู่ในรูปแบบของ class 
+    - class จะต้องชื่อเหมือนกันกับ file_name
+    - main method เป็นจุดเริ่มต้นของโปรแกรม
+    - สาเหตุที่ main method ต้องเป็น public เพราะ JVM จะเรียกใช้ main method
+    - static ใช้สำหรับ class ที่ไม่ต้องสร้าง object ใหม่ก็สามารถเรียกใช้ได้เลย เช่น Main.main(new String[] {  });
+    - String[] args ใช้ในการรับค่าเพิ่มเติมที่ใส่มาตอนสั่ง Execute เช่น java Main byte

@@ -1,0 +1,6 @@
+
+    :: javac <file_name>.java 
+    สั่ง compiler ให้แปรง .java เป็น .class
+
+    :: java <file_name>
+    Execute java code

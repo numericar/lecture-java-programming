@@ -1,0 +1,25 @@
+
+    :: Reading from keyboard
+    ใน Java มี class Scanner สำหรับรับ input จากผู้ใช้ผ่าน console
+
+    :: ใช้ System.in รับ input value จาก keyboard
+
+    Scanner method
+    > nextInt()
+        - เลขจำนวนเต็ม
+    > nextFloat()
+        - เลขทศนิยม
+    > nextDouble()
+        - เลขทศนิยม
+    > next()
+        - อ่านข้อความ แต่อ่านแค่ 1 คำ
+    > nextLine()
+        - อ่านข้อความทั้งบรรทัด
+    > nextByte()
+    > nextShort()
+    > nextLong()
+    > nextBoolean()
+    > hasNextInt()
+        - ใช้ตรวจสอบว่าค่าที่ใส่เข้ามาเป็น int หรือไม่
+    > hasNextFloat()
+        - ใช้ตรวจสอบว่าค่าที่ใส่เข้ามาเป็น float หรือไม่

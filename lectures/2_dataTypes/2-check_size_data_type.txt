@@ -1,0 +1,3 @@
+
+    :: Check size of data type
+    สามารถเข้าถึง MIN_VALUE และ MAX_VALUE ผ่าน Wrapper class ได้เลย

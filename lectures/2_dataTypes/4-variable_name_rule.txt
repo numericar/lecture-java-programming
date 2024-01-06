@@ -1,0 +1,24 @@
+
+    :: Variable naming rules
+    กฏของการตั้งชื่อตัวแปรในภาษา Java
+
+    1. Case Sentitive
+    ตัวอักษรตัวใหญ่และตัวเล็กแตกต่างกัน
+
+    2. Contains Alphabet, _ or $
+    สามารถมีตัวอักษร อันเดอร์สกอล์ และ ดอลล่าไซน์
+
+    3. Start with Alphabet, _, $
+    เริ่มต้นชื่อตัวแปรด้วย ตัวอักษร อันเดอร์สกอล์ และ ดอลล่าไซน์
+
+    4. Should not be a keyword
+    ต้องไม่ใช่ Key ของ Java compiler
+
+    5. Should not be a class name, if class is also in use
+    ไม่ควรใช้ชื่อของ class
+
+    6. No limit on length of name 
+    ไม่จำกัดความยาวของชื่อ
+
+    7. Folow Camel Cases
+    ใช้ Camel Case

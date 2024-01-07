@@ -1,0 +1,17 @@
+
+    :: Platform Independent
+    Java เป็นอิสระจาก Platform อย่างไร ? ในขณะที่ภาษาอื่น ๆ เช่น C, C++, C# จะขึ้นอยู่กับ Operating System
+
+    - เรามีสิ่งที่เรียกว่า source code (*.java)
+    - source code จะถูก compiler อ่านและยืนยันว่าไม่มีข้อผิดพลาด
+    - หลังจากนั้นจะถูกแปลงเป็น .class (byte code) โดยไฟล์นี้จะไม่ใช่รหัสเครื่อง
+    - เราจะเรียนกใช้ JVM เพื่อแปรง byte code เป็น machine code
+
+    :: Java Virtual Machine
+    - ข้างในจะมี Interpreter หรือเรียกอีกชื่อว่า JIT Compiler (Just in time compiler)
+    ทำหน้าที่แปรง byte code เป็น machine code
+    - โดยสามารถแปรงจาก byte code ไปเป็น machine code บนระบบปฏิบัติการอะไรก็ได้ เช่น Windiws, Linux, MacOS
+    - byte code จะไม่สามารถเรียกใช้คำสั่งของ OS ได้โดยตรง ต้องถูกเรียกใช้ผ่าน JVM
+    โโย JVM แต่ละระบบปฏิบัคิการอาจจะทำงานไม่เหมือนกันในการคุยกับ OS แต่สามารถเข้าใจ byte code ได้เหมือนกัน 
+
+    *** เขียน 1 ครั้งจากที่ไหนก็ได้ ก็สามารถนำไปใช้ได้ทุกที่ ***

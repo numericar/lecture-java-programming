@@ -1,0 +1,23 @@
+
+    :: Compiler vs Interpreter
+    ทั้งคู่ใช้สำหรับแปลโปรแกรมภาษา Java ไปเป็น machine code
+
+    :: Interpreter
+    - จะเป็นการค่อย ๆ แปลที่ละบรรทัด
+    - ถ้าต้องการอ่านสิ่งที่เคยแปลไปแล้วใหม่ ต้องให้ interpreter แปลใหม่อีกครั้ง
+    - ถ้าหากไม่มี interpreter จะไม่สามารถทำงานได้อีก
+
+    :: Compiler
+    - แปลทีเดียวพร้อมกันทุกบรทัด
+    - สร้างไฟล์ผลลัพธ์ที่ได้จากการแปลแล้วแยกต่างหาก เช่น .exe
+    - ถ้าต้องการอ่านสิ่งที่เคยแปลไปแล้วใหม่ สามารถเข้าไปอ่านในไฟล์ที่เก็บ machine code ได้เลย
+    ไม่ต้องแปลใหม่อีกรอบ
+    - หลังจาก compile แล้ว ไม่จำเป็นต้องใช้ Compiler ในการทำงานอีก
+
+    :: Java เป็นลูกผสมของ Compiler และ interpreter
+
+    :: Java Program
+    1. แปรงไฟล์ .java (จัดเก็บ java code) ไปเป็น .class (จัดเก็บ byte) ด้วย compiler
+    2. จากนั้น byte code จะถูกตีความด้วย interpreter ชื่อว่า jvm ไปเป็นภาษาที่เครื่องอ่านเข้าใจได้
+
+    [.java] ---> <compile with javac> ---> [.class] ---> <use jvm for tracnslate byte code to machine code> ---> [os]

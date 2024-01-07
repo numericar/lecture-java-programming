@@ -2,6 +2,7 @@
     :: Integral data type in detail
     Integral type ประกอบด้วย Integer, Floating Point, Character, Boolean
 
+    --- Integer ---
     :: ทำไมเราถึงมี 4 ชนิดข้อมูลที่เป็น integral 
     ตัวอย่างเช่น
         - int มีขนาด 4 byte
@@ -33,5 +34,13 @@
     - เราต้องการ bit ของ 5 = [0, 0, 0, 0, 0, 1, 0, 1]
     - ทำให้กลายเป็น 1 complement โดยการกลับด้าน bit = [1, 1, 1, 1, 1, 0, 1, 0]
     - จากนั้นนำมา +1 = [1, 1, 1, 1, 1, 0, 1, 0] + 1 = 11111011 จะกลายเป็น 2 complement
+
+    --- Integer ---
+
+    --- Float ---
+    - จะไม่เก็บทศนิยมไว้ใน memory
+    - จะใช้วิธีแบบนี้ 163.52 -> 16352 * 10^-2 หรือ 16352E-2
+
+    --- Float ---
 
     :: สามารถใช้ .toBinaryString() ของ wrapper class เพื่อดู bit ของข้อมูลได้

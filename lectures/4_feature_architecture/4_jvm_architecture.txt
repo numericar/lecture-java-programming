@@ -1,0 +1,28 @@
+
+    :: JVM Architecture
+    มีหน้าที่ Execute java program โดยจะมี Interpreter ที่ใช้สำหรับ Execute
+
+    - โปรแกรมจำเป็นต้องจองพื้นที่ส่วนหนึ่งเพื่อ Execute program
+    โดยจะถูก Execute โดย CPU
+
+    :: Memory จะถูกแบ่งออกเป็น 3 ส่วน
+    > Heap
+        - ใช้สำหรับจัดเก็บ object
+        - ถ้า variable ไหนจัดเก็บ object, variable นั้นจะจัดเก็บ address ที่ชี้มาหา heap ในตำแหน่งของ object นั้นแทน
+    > Stack
+        - ใช้จัดเก็บ variable ที่ถูกสร้างขึ้นในโปรแกรม
+    > Code Section (main Memory)
+        - จัดเก็บชุดของ byte code ที่ได้จาก .class เพื่อให้ CPU สามารถนำไป execute ได้
+        - โดยในชั้นนี้จะถูกจัดเก็บ method ของ Java Program ทั้งหมด
+        - มีอีกชื่อนึงเรียกว่า method area
+
+    - เมื่อเราทำการ execute จาก .class มันจะถูกนำไปเก็บไว้ใน Code Section
+    จากนั้น CPU สามารถทำ class loading ข้อมูลใน .class ไปที่ Code Section เพื่อ execute ได้
+
+    :: Interpreter / JIT Compiler ไม่เหมือนกันตรงที่ JIT ก็เป็น compiler
+
+    :: ใน JVM ส่วนของ Execute Engine (JIT Compiler) จะมี Garbage Collector โดยมันจะช่วยกำจัด object ต่าง ๆ
+    ที่ไม่ได้ใช้แล้วออกจาก Heap
+
+    :: PC Register
+    ดูที่อยู่ของโปรแกรมของโปรแกรมใน CPU เพื่อ Execute โดย CPU จะเก็บที่อยู่ของคำสั่งถัดไปเพิ่อ execute

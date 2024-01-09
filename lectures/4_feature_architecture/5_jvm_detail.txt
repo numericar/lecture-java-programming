@@ -1,0 +1,40 @@
+
+    :: JVM Architecture detail
+
+    :: Class Loader
+    ประกอบด้วย 3 ส่วน คือ
+        > Loading 
+            - โหลด class และ method ทั้งหมดใน java program ของเรา
+            - ไม่ว่าจะโหลด class ไหน, object จะถูกสร้างขึ้นภายใน Heap
+            - โดยจะถูกแยกออกเป็น 3 ส่วน
+                - bootstrap class loader (โหลด runtime classes โดย JVM โดยจะเป็น class ที่เป็น library ของ java เช่น Java SE)
+                - extension class loader (โหลด runtime environment โดย JVM)
+                - application class loader (เป็นตัวที่โหลดคลาสต่าง ๆ จาก Java Program ของเรา)
+        > Linking
+            - โดยจะถูกแยกออกเป็น 3 ส่วน
+                - Veryfy ตรวจสอบว่า byte code นั้นเป็น java byte code
+                - Prepare จัดสรรหน่วยความจำสำหรับตัวแปรคงที่
+                - Resolve จัดเก็บตำแหน่งใน memory ของ method ที่ main เรียกใช้งาน
+        > Initialization
+            - initial ตัวแปรค่าคงที่ทั้งหมดของ class
+
+    :: JVM Memory
+    > Method area
+    > Heap area
+    > Stack
+        - ใช้ในการจัดเก็บ Thread ที่ใช้ในการทำงานของโปรแกรม
+        - แต่ละ thread จะใช้ heap เดียวกัน
+        - แต่ละ thread จะสร้าง pc register ขึ้นมา 1 อัน
+    > PC Register
+
+    :: Execute Engine
+    จะประกอบด้วย 3 ส่วน 
+    > Interpreter
+        - แปล java bytecode เป็น machine code ทีละบรรทัด
+        - เมื่อมีการรันโปรแกรมใหม่ จะต้องสั่งให้แปลทีละบรรทัดใหม่
+    > JIT Compiler
+        - แปล java bytecode เป็น machine code โดยจะแปลทุกบรรทัดพร้อมกัน
+        - แปลแค่ครั้งเดียว แล้วเก็บผลลัพเป็นไฟล์แยกไว้ ถ้าถูกเนียกใช้ใหม่ และ code ไม่มีการเปลี่ยนแปลงก็สามารถ
+        ใช้ไฟล์ผลลัพมาทำงานได้เลย
+    > Garbage Collector
+        - คอยลบ object ใน heap ที่ไม่ได้ใช้แล้วออก

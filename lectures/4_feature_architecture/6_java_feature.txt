@@ -1,0 +1,31 @@
+
+    :: Java Buzzwords
+    - Simple
+    - Secure
+    JVM มีตัวจัดการความปลอดภัยและตรวจสอบโค้ด Java โดยหากมีโค้ดที่เป็นอันตรายในโค้ด Java ของเราที่อาจทำให้โค้ด Java ของเราเสียหาย
+    JVM จะไม่ Execute Java Code
+
+    - Portable
+    Java Program สามารถทำงาน Platform อะไรก็ได้
+
+    - Object-Oriented
+    เป็นวิธีการพัฒนาโปรแกรมและหลักการเขียนโปรแกรมแบบเชิงวัตถุ ประกอบด้วย Abstraction, Encapsulation, Inheritance, Pilymorphism
+
+    - Robust
+    Java Program แข็งแกร่งมาก ไม่เคยล้มเหลว
+    โดยสภาพแวดล้อมที่เลวร้ายที่สุด ถ้าโปรแกรมต้องการ environment ใด ๆ แต่ไม่มี environment ให้ใช้ โปรแกรมจะเสียหาย เช่น C, C++
+    แต่ Java Program จะเริ่มต้นแม้ว่าจะไม่มีทรัพยากรไม่พร้อมก็ตาม โปรแกรมจะไม่เสียหาย โดยสิ่งที่เรียกว่า Exception Handler
+    
+
+    - Multitheaded
+    แบ่งโปรแกรมออกเป็นหลายส่วนเพื่อการทำงานพร้อมกัน
+
+    - Architecture-Neutral
+    มีความเป็นกลางทางสถาปัตยกรรม
+
+    - Interpreter
+    - High Performance
+    - Distributed
+    Java Program สามารถแบ่งตัวเองออกเป็น component ต่าง ๆ ไว้บนคอมพิวเตอร์หลาย ๆ เครื่องได้ และทำงานเป็นโปรแกรมเดียวกัน
+    
+    - Dynamic

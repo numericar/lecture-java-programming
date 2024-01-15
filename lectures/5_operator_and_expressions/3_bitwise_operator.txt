@@ -1,0 +1,41 @@
+
+    :: Bitwise Operators - AND OR XOR
+    เนื่องจาก computer เป็นระบบอีเล็กทรอนิกส์ จึงทำงานเป็นระบบบิตเท่านั้น
+    และสามารถทำงานได้รวดเร็วกว่า operator อื่น ๆ
+    > AND 
+        - symbro: &
+    > OR 
+        - symbro: |
+    > NOT
+        - symbro: ~
+    > XOR
+        - symbro: ^
+    > Right Shift
+        - symbro: >>
+    > Unsigned Right Shift 
+        - symbro: >>>
+    > Left Shift
+        - symbro: <<
+
+    Truth table
+
+    AND (&)
+    A   B   A&B
+    0   0   0
+    0   1   0
+    1   0   0
+    1   1   1
+
+    OR (|)
+    A   B   A|B 
+    0   0   0
+    0   1   1
+    1   0   1   
+    1   1   1
+
+    XOR (^)
+    A   B   A^B 
+    0   0   0   
+    0   1   1
+    1   0   1
+    1   1   0

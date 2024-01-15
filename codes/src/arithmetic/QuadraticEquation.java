@@ -1,3 +1,5 @@
+package arithmetic;
+
 import java.util.Scanner;
 
 public class QuadraticEquation {
@@ -20,3 +22,4 @@ public class QuadraticEquation {
 		System.out.println("Root are " + r1 + " " + r2);
 	}
 }
+

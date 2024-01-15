@@ -1,3 +1,5 @@
+package arithmetic;
+
 import java.util.Scanner;
 
 public class Cubiod {

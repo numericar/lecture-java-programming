@@ -1,3 +1,5 @@
+package arithmetic;
+
 import java.util.Scanner;
 
 public class Formula {
@@ -20,3 +22,4 @@ public class Formula {
 		System.out.println("Area of formula is " + area);
 	}
 }
+

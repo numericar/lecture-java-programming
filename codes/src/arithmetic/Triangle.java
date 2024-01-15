@@ -1,3 +1,5 @@
+package arithmetic;
+
 import java.util.Scanner;
 
 public class Triangle {
@@ -16,3 +18,4 @@ public class Triangle {
 		System.out.println("Area of triangle is " + area);
 	}
 }
+

@@ -10,6 +10,7 @@
         - symbro: ~
     > XOR
         - symbro: ^
+        - เหมือนกันได้ 0, ต่างกันได้ 1
     > Right Shift
         - symbro: >>
     > Unsigned Right Shift 

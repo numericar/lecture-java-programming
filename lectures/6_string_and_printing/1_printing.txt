@@ -5,6 +5,18 @@
     > System.out.println()
         - ขึ้นบรรทัดใหม่ และแสดงข้อมูลออกไปที่ console
     > System.out.printf()
+        - สามารถจัด format ของข้อมูลที่แสดงออกไปที่ console ได้
+        - % คือ control character
+            - d = integer
+            - x = hex (เลขฐาน 16)
+            - f = float
+            - e = double
+            - c = character
+            - s = string
+        - %[argument_index][flags][width][.percision]conversion
+            - argument_index ตำแหน่งของข้อมูลที่ถูกส่งเข้ามา
+            - width ระบุจำนวนช่องว่างที่ต้องการเว้น
+            - flags ประกอบด้วย -, +, 0, '', ( โดยจะใช้เป็นตัวอักษรที่อยากให้ใส่เข้าไปในช่องว่าง
     > System.out.format()
 
     ** System เป็น static object

@@ -1,0 +1,12 @@
+
+    :: Java Printing
+    > System.out.print()
+        - แสดงข้อมูลออกไปที่ console
+    > System.out.println()
+        - ขึ้นบรรทัดใหม่ และแสดงข้อมูลออกไปที่ console
+    > System.out.printf()
+    > System.out.format()
+
+    ** System เป็น static object
+
+    ** out จะจัดเตรียม overload method ต่าง ๆ ในการแสดงผลออกไปที่ console ให้กับเรา

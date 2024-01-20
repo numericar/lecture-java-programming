@@ -1,0 +1,21 @@
+
+    :: String object
+    เป็น build-in class ใน Java และถูกใช้เหมือนประเภทข้อมูล
+    โดย string จะเป็น conllection of character
+    เช่น
+        String str = "Java";
+        จะได้ผลลัพเป็น conllection of character ภายใน memory
+        ['J', 'a', 'v', 'a'];
+
+        โดยจะมี referance (pointer in c++) จัดเก็บตำแหน่งของ string object ไว้
+        [address] -> ['J', 'a', 'v', 'a']
+
+    :: หากเรามี array og character เราสามารถแปลงเป็น string ได้ 
+    String str = new String(new char[] {'J', 'a', 'v', 'a'});
+
+    :: การ new object จะถูกนำไปสร้างไว้ใน heap
+
+    :: ถ้ามี string ที่เหมือนกันที่สร้างขึ้นมาใหม่ java จะไม่สร้างขึ้นใหม่ใน memory แต่ละ referance ไปที่ตำแหน่งเดียวกัน
+    เช่น
+    String str1 = "Java";   // [str1] -> ["Java"]
+    String str2 = "Java";   // [str1, str2] -> ["Java"]

@@ -7,6 +7,7 @@ public class StringMethod {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter your message: ");
         String message = sc.nextLine();
+        sc.close();
 
         // ส่งคืนความยาวของ string
         System.out.println(message.length());

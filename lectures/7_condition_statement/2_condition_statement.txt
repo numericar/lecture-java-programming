@@ -1,19 +1,40 @@
 
     Condition Statement
         เป็นการทำงานตามเงื่อนไขที่กำหนด
-        if (เงื่อนไข) {
-            ถ้าเป็นจริงจะทำงานที่นี่
-        } else {
-            ถ้าเป็นเท็จจะทำงานที่นี่
-        }
 
-        ตัวอย่าง
-        int x = 5;
-        if (x >= 5) {
-            sout(true);
-        } else {
-            sout(false);
-        }
+        if else statement
+        ใช้สำหรับกำหรดเงื่อนไขการทำงานในรูปแบบ block of program
+            if (เงื่อนไข) {
+                ถ้าเป็นจริงจะทำงานที่นี่
+            } else {
+                ถ้าเป็นเท็จจะทำงานที่นี่
+            }
+    
+            ตัวอย่าง
+                int x = 5;
+                if (x >= 5) {
+                    sout(true);
+                } else {
+                    sout(false);
+                }
+    
+            Nested if
+                คือการที่เรามีเงื่อนซ้อนเงื่อนไขอีกทีหนึ่ง
 
-        Nested if
-            คือการที่เรามีเงื่อนซ้อนเงื่อนไขอีกทีหนึ่ง
+        Switch-case statement
+        ใช้ในกรณีที่เรามีเงื่อนไขเยอะ ๆ โดยจะเป็นหลักการ menu driven program
+            switch (value) {
+                case 1:             // ถ้า value ที่ใส่เข้ามามีค่าเป็น 1
+                    statement;      // statement ที่กำหนดไว้จะทำงาน
+                    break;          // ใช้สำหรับหยุดการทำงานของ switch case, ถ้าไม่ break case ถัด ๆ ไปก็จะทำงานด้วย
+                case 2: 
+                    statement; 
+                    break;
+                case 3: 
+                    statement; 
+                    break;
+                default:
+                    statement;
+            }
+
+        

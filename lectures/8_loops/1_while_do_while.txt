@@ -1,0 +1,19 @@
+
+    loop
+        ใช้สำหรับทำซ้ำชุดคำสั่ง
+
+    while
+        ถ้าเงื่อนไขเป็นจริง จะเข้าไปทำงานใน loop ต่อ
+        while (condition) {
+            statement
+        }
+
+    do while
+        ทำ statement ก่อน แล้วค่อยตรวจสอบว่าเงื่อนไขเป็นจริงอยู่หรือไม่ ถ้าเป็นจริงจึง loop ต่อไป
+        do {
+            statement
+        } while (condition);
+
+    for
+
+    for each

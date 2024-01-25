@@ -15,5 +15,9 @@
         } while (condition);
 
     for
+        ทำซ้ำ statement ตามจำนวนรอบที่กำหนด
+        for (intialize; condition; updated) {
+            statement
+        }
 
     for each

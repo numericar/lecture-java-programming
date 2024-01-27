@@ -1,0 +1,3 @@
+
+Overloading method:
+    เป็น method ที่มีชื่อเดียวกัน แต่มี parameter แตกต่างกัน หรือมี return type ต่างกัน

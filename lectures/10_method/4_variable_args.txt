@@ -1,0 +1,10 @@
+Variable Arguments:
+    เราสามารถทำให้ method สามารถรับ parameter ได้ไม่จำกัด
+    void show(int... x) {
+
+    }
+
+    และสามารถ loop ค่าออกมาได้แบบ array
+    for (int a : x) {
+        sout(a);
+    }

@@ -1,0 +1,8 @@
+
+    Nested Loop
+        เป็น loop ที่การ loop ข้างในอีกรอบหนึ่ง
+        for (initializ; condition; updated) {
+            for (initializ; condition; updated) {
+                
+            }
+        }

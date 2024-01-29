@@ -1,0 +1,19 @@
+
+    Class vs Object
+        วัตถุบนโลกใบในประกอบด้วย 2 สิ่งคือ 
+            property
+                คุณลักษระของวัตถุ
+            behaviour
+                พฤติกรรมของวัตถุ
+                โดยการตั้งชื่อจะใช้ คำกริยา
+
+        Class 
+            เป็นต้นแบบของ object ว่าควรจะมี property และ behaviour อะไรบ้าง
+
+        Object
+            คือ instance ที่ถูกสร้างขึ้นจาก class โดยจะมี property และ behaviour ตาม class ที่นำมา
+            สร้าง instance
+            โดยใน Java เมื่อทำการสร้าง object ขึ้นมาใหม่แล้ว จะถูกนำไปเก็บไว้ใน Heap memory 
+            และจะมี reference เก็บไว้ใน Stack memory
+        Instance 
+            object ที่ถูกสร้างขึ้นจาก class

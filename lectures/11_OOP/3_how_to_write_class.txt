@@ -1,0 +1,6 @@
+
+    วิธีการเขียน class
+        ทุก ๆ คลาสจะมี properties และ method
+        เราควรออกแบบทุกครั้งว่า class ควรจะที properties และ method อะไรบ้าง
+
+        ทุก ๆ class ที่เกิดขึ้น, java จะสร้าง .class file ให้กับมันเสมอ

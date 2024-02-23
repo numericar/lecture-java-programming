@@ -1,0 +1,18 @@
+
+    Constructor
+        เป็น method พิเศษที่จะทำงานเมื่อ class ถูกนำไปสร้าง object
+
+        ทุก ๆ class จะมี default constructor โดยจะถูกสร้างโดน Java Complier
+        แต่ถ้าหากเราเขียน constructor ของเราเอง มันจะถูกนำไปเขียนทับลง defailt constructor
+        
+        มีชื่อเดียวกันกับ class 
+
+        ไม่มี return type
+
+        this.length = breadth = s;
+            เป็นการนำค่าจาก s ใส่ลงไปใน breadth ก่อน จากนั้นค่าใน breadth จะไหลไปที่ length
+            โดยเป็นการย่อมากจาก
+                this.length = s;
+                this.breadth = s;
+
+        สร้างขั้นมาเพื่อกำหนดค่าเริ่มต้นให้กับ properties

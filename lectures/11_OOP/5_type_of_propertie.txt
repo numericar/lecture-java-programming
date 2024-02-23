@@ -1,0 +1,41 @@
+
+    Type of properties
+        Read & Write
+            สามารถอ่านและเขียนได้
+            มีทั้ง getter, setter ให้กับ properties
+        Read Only
+            อ่านได้อย่างเดียว
+            มีแค่ getter ให้กับ properties
+        Write Only
+            เขียนได้อย่างเดียว
+            มีแค่ setter ให้กับ properties
+
+    class Ractangle {
+        private double length;
+
+        // มีทั้ง getter และ setter ให้กับ property length
+        public double getLength() {
+            return this.length;
+        }
+        public void setLength(double l) {
+            this.length = l;
+        }
+    }
+
+    class Student {
+        private double roll;
+
+        // มี getter ให้กับ property roll เพราะเป็น read only
+        public double getRollNumber() {
+            return this.roll;
+        }
+    }
+
+    class Producer {
+        private int sharedData;
+
+        // มี setter ให้กับ property sharedData เพราะเป็น write only
+        public void setSharedData(int s) {
+            this.sharedData = s;
+        }
+    }

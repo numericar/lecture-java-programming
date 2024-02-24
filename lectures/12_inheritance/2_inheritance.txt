@@ -1,0 +1,9 @@
+
+    Inheritance
+        เป็นการสืบทอดความสามารถของคลาส ไปสร้างเป็นคลาสใหม่
+
+        extends
+            เป็น keyword ใน Java ใช้สำหรับสืบทอดความสามารถ
+            เช่น class Cylinder extends Circle
+            ความสามารถของ Circle จะถูกส่งไปที่ Cylinder ทั้งหมด
+                

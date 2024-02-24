@@ -17,6 +17,24 @@ public class RactangleCon {
     public RactangleCon(double s) {
         this.length = breadth = s;
     }
+
+    public double getLength() {
+        return length;
+    }
+
+    public void setLength(double length) {
+        this.length = length;
+    }
+
+    public double getBreadth() {
+        return breadth;
+    }
+
+    public void setBreadth(double breadth) {
+        this.breadth = breadth;
+    }
+
+    
 }
 
 class RactangleConTest {
@@ -24,5 +42,9 @@ class RactangleConTest {
         RactangleCon r1 = new RactangleCon();
         RactangleCon r2 = new RactangleCon(5, 5);
         RactangleCon r3 = new RactangleCon(10);
+
+        System.out.println(r1);
+        System.out.println(r2);
+        System.out.println(r3);
     }
 }

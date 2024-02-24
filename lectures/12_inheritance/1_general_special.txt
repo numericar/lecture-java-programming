@@ -1,0 +1,18 @@
+    
+    Generalizatin vs Specialization
+        Generalizatin 
+            เป็นการนำคุณสมบัติที่คล้ายกันของ object หลาย ๆ object หรือจากหลาย ๆ class มาสร้างให้มี concept ใหม่
+            ทำให้เกิด class ใหม่ที่มีคุณสมบัติแตกต่างจจากเดิม
+
+            เป็นกลุ่มของ object ไว้ในชื่อเดียว
+            เช่น iPhone, Samsung, Vivo (sub class) ต่างก็เป็น SmartPhone (super class)
+
+        Specialization
+            เป็นการสร้างคลาสใหม่ โดนอาสัย concept ของตลาสเก่าบางส่วน และเพิ่มเติมลงไปเองบางส่วนจนเกิดเป็นคลาสใหม่
+
+        อ้างอิง
+            https://slideplayer.in.th/slide/2148298/
+
+        โดยปกติการทำ Specialization จะใช้ Inheritance
+        ส่วน Generalizatin จะใช้ Interface
+        โดยจะมี class ที่มีความสามารถของทั้ง Inheritance และ Interface คือ abstract class

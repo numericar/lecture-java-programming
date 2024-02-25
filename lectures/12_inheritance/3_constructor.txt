@@ -1,0 +1,4 @@
+
+    Constructor in inheritance
+        เมื่อ object ของ sub class ถูกสร้างขึ้น constructor ของ super class จะทำงานด้วย
+        โดย constructor ของ super class จะถูกทำงานก่อน constructor ของ sub class

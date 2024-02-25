@@ -2,3 +2,8 @@
     Constructor in inheritance
         เมื่อ object ของ sub class ถูกสร้างขึ้น constructor ของ super class จะทำงานด้วย
         โดย constructor ของ super class จะถูกทำงานก่อน constructor ของ sub class
+
+        สามารถเรียกใช้งาน constructor ของ super class ได้โดยการใช้งาน keyword super();
+        โดยอาจส่ง parameter เข้าไปตามที่ super class ออกแบบไว้
+
+        โดยสาเหตุที่ต้องมี super เพราะอาจมีกรณีที่เราต้องการกำหนดค่าเริ่มต้นให้กับ properties ของ super class

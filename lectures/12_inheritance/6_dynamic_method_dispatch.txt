@@ -1,0 +1,22 @@
+
+    Dynamic method dispatch
+        
+        เราสามารถนำ sub class มาสร้าง object ให้กับ super class ได้
+        Super sup = new Sub();
+
+        โดย method ที่ถูก sub class override ไป จะเข้ามาแทนที่การทำงานเดิม
+        ที่อยู่ใน super class
+        โดยสาเหตุที่เป็นแบบนี้ก็เพราะว่า การทำงานข้างในจะขึ้นอยู่กับ object ไม่ใช่ reference
+        Super sup (reference)
+        new Sub() (object)
+
+        method ที่มีใน sub class แต่ไม่มีใน super class จะไม่สามารถถูกเรียกใช้งานได้
+        เพราะเรา reference ไปที่ super class
+
+        Super sup = new Sub();
+        Super class reference holding on object of sub class
+        สิ่งที่เรียกว่า Runtime Polymorphism
+
+        Runtime ไม่สามารถตัดสินใจได้ว่าจะเลือกใช้การทำงานของ method ไหน
+        ดังนั้นการทำงานจึงขึ้นอยู่กับ object ที่สร้างขึ้นใน
+

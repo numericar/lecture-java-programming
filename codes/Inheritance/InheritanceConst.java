@@ -3,6 +3,7 @@ package Inheritance;
 public class InheritanceConst {
     public static void main(String[] args) {
         Child c = new Child(4);
+        System.out.println(c);
     }
 }
 

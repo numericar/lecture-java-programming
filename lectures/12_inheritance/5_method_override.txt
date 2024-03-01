@@ -1,3 +1,10 @@
 
     Method Overriding
         กำหนดขั้นตอนการทำงานใหม่ให้กับ method ของ super class ที่สืบทอดมาให้กับ sub class
+
+    Rules
+        Signature ต้องเหมือนกันทุกประการ
+        เช่น
+            Super class: public void display()
+            Sub class: public void display()
+        จะไม่สามารถเปลี่ยนเป็น public int display(int x) ได้

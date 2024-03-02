@@ -1,0 +1,33 @@
+
+    Abstract Class
+        class ชนิดหนึ่งที่สามารถกำหนด method ได้ทั้งในรูปแบบที่ระบุการทำงาน และแบบระบุแค่ชื่อ
+        ให้ class อื่นที่สอบทอดไประบุการทำงานเอง (เหมือนกับ interface)
+
+        ใน Computer Seince จะมีคลาสอยู่ 2 แบบคือ
+            Concrete class:
+                class ClassName {}
+            Abstract Class
+                abctract class ClassName {}
+        
+        โดยทั้ง 2 แบบมีความแตกต่างกัน
+            Concrete class
+                สามารถนำไปสร้าง object ได้
+
+            Abstract class
+                ไม่สามารถนำไปสร้าง object ได้ แต่สามารถนำไปสร้างเป็น Reference ได้ 
+                เช่น
+                    ไม่สามารถทำได้ 
+                        AbstractClass ac = new AbstractClass();
+                    สามารถทำได้
+                        AbstractClass ac;
+        
+    Abstract Method
+        เป็น method ที่ไม่ได้ระบุการทำงานข้างในไว้ โดนจะให้ class ที่สืบทอดไประบุการทำงานแทน
+        เช่น
+            method ทั่วไป
+                public void display() {
+                    System.out.println("Hello World");
+                }
+
+            abctract method 
+                abstract void method2();

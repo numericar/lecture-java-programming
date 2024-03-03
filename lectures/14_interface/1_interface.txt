@@ -1,0 +1,11 @@
+
+    Interfaces
+        class ชนิดหนึ่งที่สามารถกำหนดพฤติกรรม (behavior) แต่ไม่ต้องกำหนดขั้นตอนการทำงาน
+        โดยจะให้ class ที่ทำการ implements ทำหน้าที่กำหนดขั้นตอนการทำงานให่กับ behavior
+        โดยประ
+
+
+        การสืบทอดมาจาก interface จะใช้ implements
+        เช่น class User implements IUser {  }
+
+        สามารถ implements ได้หลาย interface

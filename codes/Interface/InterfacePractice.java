@@ -1,4 +1,4 @@
-package codes.Interface;
+package Interface;
 
 
 public class InterfacePractice {

@@ -4,8 +4,22 @@
         โดยจะให้ class ที่ทำการ implements ทำหน้าที่กำหนดขั้นตอนการทำงานให่กับ behavior
         โดยประ
 
-
         การสืบทอดมาจาก interface จะใช้ implements
         เช่น class User implements IUser {  }
 
         สามารถ implements ได้หลาย interface
+
+        หากเป็น interface แนะนำให้การตั้งชื่อขึ้นต้นด้วย I เช่น IUserService
+        
+        สามารถใช้ interface เป็น reference ได้
+        IUserService userService = new UserService();
+
+        เราสามารถสร้าง instance โดยใช้ interface เป็น reference ได้ถ้าหาก class นั้น
+        สืบทอด interface ไป 
+            class SmartPhone extends Phone implements ICamera, IMusicPlayer { }
+            SmartPhone smartPhone = new SmartPhone();
+            Phone phone = new SmartPhone();
+            ICamera camera = new SmartPhone();
+            IMusicPlayer musicPlayer = new SmartPhone();
+        โดยจะสามารถเรียกใช้ได้แค่ความสามารถที่สามารถอ้างอิง (reference) ถึงกันได้
+        

@@ -4,9 +4,6 @@ public class InterfacePractice2 {
     public static void main(String[] args) {
         System.out.println("Hello World");
         ITest.meth3();
-
-        My my = new My();
-        my.meth9();
     }
 }
 

@@ -1,0 +1,14 @@
+
+    Final
+        เหมือนกับค่าคงที่ (const) ใน c และ c++
+        โดยมี 3 ประเภท คือ
+            final variable 
+                ทำให้ตัวแปรเป็นค่าคงที่ ไม่สามารถแก้ไขได้
+                เช่น final int MIN = 1;
+            final method
+                ทำให้ไม่สามารถ override method ได้
+            final class
+                ทำให้คลาสไม่สามารถนำไปสืบทอดได้อีก
+
+        การตั้งชื่อจะใช้ตัวแปรใหญ่และ snack case
+        เช่น final MIN_VALUE = 1;

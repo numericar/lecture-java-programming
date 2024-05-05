@@ -1,0 +1,13 @@
+Package
+    เป็นขุดของ class, interface, package อื่น ๆ
+    โดยจะใช้ในการจัดระเบียบไฟล์ใน Java
+
+    โดยถ้า Java มี class, interface จำนวนมาก 
+    เราสามาระจัดกลุ่มสิ่งที่เกี่ยวข้องกัน ให้อยู่ด้วยกันได้
+
+โดยเราสามารถเรียกใช้งาน package ได้ดังนี้
+ตัวอย่าง
+    import java.lang.String
+    หมายถึง
+        เข้าถึง package java และเข้าถึง package lang 
+        ที่อยู่ข้างใน จากนั้น เข้าถึงคลาส String

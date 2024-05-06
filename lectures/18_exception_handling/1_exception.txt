@@ -1,0 +1,34 @@
+Exception Handling
+    เป็นการจัดการกับข้อผิดพลาดที่เกิดขึ้นระหว่าง Runtime
+
+Exception 
+    คือเหตุการณ์ไม่พึงประสงค์ที่ขัดขวางขั้นตอนการทำงานปกติของโปรแกรมของเรา
+
+โดยเราสามารถใช้งาน try catch ในการจัดการกับข้อผิดพลาดได้
+ตัวอย่าง
+    try {
+        // ขั้นตอนการทำงานปกติของโปรแกรม
+    } catch (NumberFormatException ex) {
+        // เมื่อเกิดข้อผิดพลาด
+    } catch (NullPointerException ex) {
+        // เมื่อเกิดข้อผิดพลาดตามประเภทของ parameter ที่ระบุ
+    } finally {
+        // ไม่จะทำเกิดข้อผิดพลาดหรือไม่ ก็จะทำงานที่บล็อคของ finally เสมอ
+    }
+
+class Exception
+    ทำให้เราสามารถดักจับข้อผิดพลาดได้ทุกประเภท
+
+ลำดับชั้นของการสืบทอด
+    Object
+        Throwable
+            Exception
+                RuntimeException
+                    IllegalArgumentException
+                        NumberFormatException
+
+เราสามารถใช้ หรือ ในการให้ catch 1 ก้อน ดักจับได้หลาย Exception
+เช่น
+    catch (NumberFormatException | NullPointerException e) {
+
+    }

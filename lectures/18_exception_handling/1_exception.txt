@@ -23,3 +23,25 @@ Type of errors
                 RuntimeException
                     IllegalArgumentException
                         NumberFormatException
+
+- เมื่อมีข้อผิดพลาดเกิดขึ้น จะสิ้นสุดที่บรรทัดที่มีปัญหาทันที
+- ในส่วนที่เราคาดว่าจ่าจะเกิด exception เราสามารถใช้ try catch เข้ามาจัดการได้
+- catch สามารถมีได้หลาย block
+- finally block เป็นส่วนที่จะถูกดำเนินการอย่างแน่นอน ไม่ว่าจะเกิด error หรือไม่
+  โดยปกติจะใช้ในการ clean up process
+
+class Main {
+    public static void main() {
+        int a, b, c;
+        try {
+            // code an error is expected
+            a = 10;
+            b = 0;
+            c = a / b;
+            System.out.println(c);
+        } catch(ArthmeticException e) {
+            // when has error
+            System.out.println("Division by zero");
+        }
+    }
+}

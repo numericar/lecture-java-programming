@@ -1,0 +1,16 @@
+Throws vs Throw 
+
+    Throw 
+        ใช้บอก conplier ว่ามีข้อผิดพลาดเกิดขึ้น โดยชนิดของข้อผิดพลาดจะขี้นอยู่กับชนิดของ class exception
+        เช่น throw new ArithmeticException("Can't devide by 0");
+
+    Throws 
+        เมื่อมีการ throw exception แต่ method ที่ throw ไม่ได้มีการใช้งาน try catch เพื่อจัดการกับ exception เราจะโยนให้ 
+        method ที่เรียกใช้เป็นตัวระบหน้าที่จัดการ exception แทน
+
+        เป็นการบอก method อื่น ๆ ที่กำลังเรียกใช้ method ปัจจุบันว่าจะมีการ throw exception ตามคลาสที่ระบุ
+        ให้ method อื่น ๆ ที่เรียกใช้มีการใช้งาน try catch เพื่อจัดการกันเอง
+
+        ทำให้ method อะไรก็ตามที่เรียกใช้ จะต้องมีการจัดการกับ exception ที่เราระบุไว้หลัง Throws
+
+        และเมื่อมีการใช้งาน Throws ก็ไมจำเป็นต้องมี try catch อีก

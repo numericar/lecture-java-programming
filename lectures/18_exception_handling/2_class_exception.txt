@@ -1,0 +1,62 @@
+Class Exception
+    ใน Java มี build-in class ที่เกี่ยวกับ exception มากมายให้เราเลือกใช้ 
+    และเราสามารถสร้าง class exception ของเราเองได้ด้วย
+
+    โดยมีลำดับการสืบทอดดังนี้
+        > Object
+            > Throwable
+                > Exception 
+                    > ClassNotFoundException
+                    > IOException
+                    > InterruptedException
+                    > NumberFormarException
+                    > RuntimeException
+                        > ArithmeticException
+                        > IndexOutOfBoundExpceiton
+                        > NullPointerException
+                > Error
+
+        Object 
+            เป็นคลาสแม่ของคลาสทั้งหมดใน java
+
+        คลาสย่อยทั้งหมดของ Exception จะถูกแบ่งออกเป็น 2 ประเภท
+            > checked exception: java จะบังคับให้ใช้ try catch ในการจัดการ
+                                 โดยคลาสทั้งหมดยกเว้น RuntimeException จะเป็น checked
+            > unchecked exception:  java จะไม่บังคับว่าจะต้องจัดการกับ exception ทำให้จะมีหรือไม่มี try catch ก็ได้
+
+    * ไม่ควรใช้ Exception ใน catch เพราะว่าเป็น super super parent ทำให้ทุก exception จะเข้ามาที่ catch หมด
+      และเมื่อนำ super super parent มาไว้ด้านบนของ catch จะทำให้ catch block อื่น ๆ ไม่สามารถทำงานได้
+
+        try {
+            int c = numbers[0]/numbers[2];
+
+            System.out.println("Division is " + c);
+            System.out.println(numbers[5]);
+        } catch (RuntimeException e) {
+            
+        } catch (Exception e) {
+            System.out.println("Denominator should not be 0");
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Index is invalid");
+        }
+
+        จาก code ด้านบน ใน block ArithmeticException, ArrayIndexOutOfBoundsException จะไม่ทำงาน
+        เราควรจะวาง super super parent ไว้ block ล่างสุดเสมอ
+
+    method ของ class exception
+        > string getMessage(): ส่งคืนข้อความของ exception
+        > string toString(): ส่งคืนข้อความของ exception โดยจะถูกเรียกใช้เมื่อมีการเรียกใช้งาน object แบบไม่ผ่าน getMessage()
+        > void printStackTrace(): บอกรายละเอียดตำแหน่งทีเกิดข้อผิดพลาด เช่น บรรทัด, คลาส, เมธอด
+                                  เพื่อใช้สำหรับการ debug program
+
+    เราสามารถสร้าง class exception ขึ้นมาเองได้โดยการสืบทอดความสามารถจาก Exception
+    และทำการ override ความสามารถของ exception
+
+    class MinBalanceException extends Exception {
+        
+        @Override
+        public String toString() {
+            return "Minimum balance must be 5000 USD";
+        }
+
+    }

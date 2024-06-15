@@ -27,4 +27,13 @@ Try with resource
         sc.close();
     }
 
+
+    * เป็นการสร้าง instance ให้อยู่แค่ใน block ของ try นี้เท่านั้น และจะทำการ close instance 
+    โดยอัตโนมัติใน block finally
+    try (FileInputStream fi = new FileInputStream()) {
+
+    } finally {
+        fi.close();
+    }
+
                 

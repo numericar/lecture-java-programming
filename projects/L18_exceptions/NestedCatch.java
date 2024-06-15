@@ -13,6 +13,8 @@ public class NestedCatch {
             System.out.println("Denominator should not be 0");
         } catch (ArrayIndexOutOfBoundsException e) {
             System.out.println("Index is invalid");
+        } catch (RuntimeException e) {
+            
         }
 
         System.out.println("Successful");

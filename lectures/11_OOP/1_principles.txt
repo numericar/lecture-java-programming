@@ -15,10 +15,10 @@ Principle of Object Oriented Programming:
             เป็นการห่อหุ้มข้อมูลสถานะหรือข้อมูลของ object จากภายนอกไม่ให้สามารถเข้าถึงสถานะของ object ได้
             โดยการเข้าถึงจะต้องกระทำผ่าน method เท่านั้น (getter/setter) โดยการซ่อนข้อมูลจะมีดังนี้
                 private
-                proteched
+                protech
                 public
 
-        Ingeritance:
+        Inheritance:
             เป็นการสืบทอดคุณสมบัตรของ object จาก super class ไปยัง sub class ทำให้ sub class 
             จะได้รับคุณสมบัติของ super class ทั้งหทด และยังสามารถเปลี่ยนแปรงพฤติกรรมของบาง method (overriding)
             ที่สืบทอดมาได้ และยังสามารถขยายความสามารถเพิ่มเติมได้ด้วย

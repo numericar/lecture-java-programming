@@ -1,7 +1,7 @@
 Throws vs Throw 
 
     Throw 
-        ใช้บอก conplier ว่ามีข้อผิดพลาดเกิดขึ้น โดยชนิดของข้อผิดพลาดจะขี้นอยู่กับชนิดของ class exception
+        ใช้บอก compiler ว่ามีข้อผิดพลาดเกิดขึ้น โดยชนิดของข้อผิดพลาดจะขี้นอยู่กับชนิดของ class exception
         เช่น throw new ArithmeticException("Can't devide by 0");
 
     Throws 

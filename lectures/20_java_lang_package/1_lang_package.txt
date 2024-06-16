@@ -1,0 +1,12 @@
+Java lang package
+    จะถูก import โดยอัตโนมัติ เพราะว่าเป็น default package
+
+    Object 
+        เป็น parent class ของทุก ๆ class ใน Java
+        โดยจะมี method ที่สำคัญดังนี้
+            - clone(): ทำการสร้าง instance ใหม่โดยคัดลากค่าที่อยู่ใน instance เดิม
+            - equals(): ใช้ตรวจสอบว่า object มีค่าตรงกันหรือไม่
+            - finalize(): ถูกเรียกโดย garbage collector เมื่อ objact จะถูกลบออกจาก heap (Destructor in c++)
+            - notify(), wait(): method กลุ่มนี้จะใช้สำหรับงานที่เป็น multithreading
+            - hashCode(): ใน java ทุก ๆ object จะมี unique code ของตัวเอง โดยจะถูกสร้างโดย compiler
+                          และเข้าถึงได้ผ่าน hashCode โดยทำให้เราสามารถระบุได้ว่า object จะไม่ซ้ำกัน

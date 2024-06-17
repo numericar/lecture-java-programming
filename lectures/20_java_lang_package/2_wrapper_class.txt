@@ -1,1 +1,29 @@
 Wrapper Class
+    primitive type ไม่ใช่ object จึงไม่มี method สำหรับจัดการกับข้อมูลปรเภทนั้น ๆ
+    Java จึงได้เตรียม Wrapper Classes เพื่อเอาไว้จัดการกับ primitive
+
+    Wrapper classes 
+        - Character
+        - Byte
+        - Short
+        - Integer
+        - Long
+        - Float
+        - Double
+        - Boolean
+
+    ลำดับการสืบทอด
+
+    > Object 
+        > Number
+            > Byte
+            > Short
+            > Integer
+            > Long
+            > Float
+            > Double
+        > Character
+        > Boolean
+
+    primitive assign to object -> auto boxing
+    object assign to primitive -> auto unboxing

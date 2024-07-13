@@ -1,0 +1,2 @@
+Lambda Funciton
+    เป็นการประกาศ method แบบไม่ระบุชื่อ

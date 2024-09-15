@@ -1,0 +1,64 @@
+** ทั้งคู่ต่างเป็น Base class สำหรับการจัดการกับ I/O เนื่องจากมีหลาย class ที่ทำการสืบทอดไปใช้
+
+InputStream class 
+<resource>[1, 2, 3, 4] -> [intput stream] -> <program>[]
+    Methods
+        > int read()
+            - อ่าน 1 byte จาก resource
+            - ถ้าหากไม่มีข้อมูลให้อ่านแล้วจะได้ค่า -1
+
+        > int read(byte[] b)
+            - ถ้าหากโปรแกรมของเรามีการประกาศ byte array อยู่แล้ว เราสามารถนำ byte array มารับข้อมูลจาก resource ได้ตามขนาดของ array 
+              เช่น 
+                    byte[] b = new byte[5];
+                    InputStream.read(b);
+                InputStream จะไปดึงข้อมูลจาก resource มา 5 ตำแหน่งใส่ใน b
+            - เป็นการอ่านตั้งแต่ตำแหน่งแรกของ resource
+
+        > int read(byte[] b, int off, int len)
+            - เหมือนกับ read(byte[] b) แต่สามารถระบุตำแหน่งที่ต้องการเริ่มต้นอ่านได้ และระบุว่าต้องการอ่านไปกี่ตำแหน่ง
+
+        > int available()
+            - บอกจำนวน resource ว่ามีอยู่กี่ byte ที่
+            
+        > long skip(long n)
+            - สามารถ skip ตำแหน่งของข้อมูลใน resource ที่เราไม่ต้องกาได้
+
+        > void mark(int limit)
+            - ในการ read จะทำให้ข้อมูลถูลบออกจาก resource 
+            - การใช้ mark จะเป็นการทำเครื่องหมายไว้ที่ข้อมูลที่เราต้องการ โดยจะใช้เพื่อเมื่อเกิดการ reset การ read จะวนกลับมา
+            อ่านข้อมูลที่เราทำการ mark ไว้ 
+            - limit เป็นการระบุว่าจะให้ mark สามารถ reset กลับไปได้ภายในรอบของ limit ที่ระบุ
+              เช่น ถ้า limit ไว้ที่ 2 รอบ แต่อ่านไปแล้ว 3 รอบจะไม่สามารถ reset ได้อีก และข้อมูลที่ mark ไว้
+              จะถูก remove
+
+        > void reset()
+            - กลับไปอ่านตำแหน่งที่เคย mark ไว้
+
+        > boolean markSupported()
+            - ไม่ใช่ทุก ๆ input stream ที่จะ support mark
+
+        > void close()
+            - หลังจากที่เราเปิดการ stream และจัดการเรียบร้อบแล้ว เราควรปิดการ stream
+
+OutputStream class
+    <program>[1, 2, 3, 4, 5] -> [OutputStream] -> <resource>[]
+    Methods 
+        > void write(int b)
+            - เขียนข้อมูลขนาด 1 byte
+
+        > void write(byte[] b)
+            - เขียนข้อมูลตามจำนวน byte array ที่ส่งเข้าไป
+
+        > void write(byte[] b, int off, int len)
+            - เขียนข้อมูลตามจำนวน byte array โดยจะเริ่มที่ off ที่ระบุ และเขียนไปกี่ตำแหน่งตมจำนวน len
+
+        > void flush()
+            - ทำงานกับ buffer output stream
+            - โดยปกติแล้วการเขียนข้อมูลลงไปที่ resource จะไม่ได้เขียนลงไปตรง ๆ แต่จะนำไปใส่ buffer ก่อน 
+            <program>[data] -> [OutputStream] -> [buffer] -> [resource]
+            โดยการ flush จะเป็นการสั่งให้ data ที่ถูกเขียนอยู่ใน buffer ถูกไหลลงไปเขียนที่ resource
+            และจะทำการล้าง buffer
+
+        > void close()
+            - ปิดการ stream และคืนทรัพยากรใน memory

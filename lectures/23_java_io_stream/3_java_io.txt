@@ -1,0 +1,45 @@
+Java stream classes
+    > java.oi.InputStream
+        > java.io.ByteArrayInputStream
+        > java.io.FileInputStream
+        > java.io.ObjectInputStream
+        > java.io.SequenceInputStream
+        > java.io.StringBufferInputStream
+        > java.io.FilterInputStream
+            - java.io.BufferedInputStream: อ่านข้อมูลจาก buffer
+            - java.io.DataInputStream: อ่านข้อมูลในรูปแบบชนิดข้อมูลของ java
+            - java.io.LineNumberInputStream: อ่านข้อมูลจาก input โดยจะบอกด้วยว่าอ่านไปแล้วกี่บรรทัด
+            - java.io.PushbackInputStream: คลาสที่อ่านข้อมูลจาก input และสามารถดันบาง byte ที่เคยอ่านไปแล้วกลับไปที่ buffer ได้
+        > java.io.RandomAccessFile
+        > java.io.StreamTokenizer
+
+    แต่ละ input stream จะขึ้นอยู่่กับแหล่งที่มาของข้อมูล
+
+
+    > java.io.Reader
+        > java.io.FileReader 
+        > java.io.BufferedReader
+            - java.io.LineNumberReader
+        > java.io.CharArrayReader
+        > java.io.FilterReader
+            - java.io.PushbackReader
+        > java.io.InputStreamReader
+            - java.io.FileReader 
+        > java.io.PipedReader
+        > java.io.StringReader 
+
+    > java.io.Writer
+        > java.io.FileWriter
+        > java.io.BufferedWriter
+        > java.io.CharArrayWriter
+        > java.io.FilterWriter
+        > java.io.OutputStreamWriter
+            - java.io.FileWriter
+        > java.io.PipedWriter
+        > java.io.PrintWriter
+        > java.io.StringWriter
+
+    Exception
+        > IOException
+        > FileNotFoundException
+        > InterruptedIOException

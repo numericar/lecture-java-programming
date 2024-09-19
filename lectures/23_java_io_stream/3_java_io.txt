@@ -1,7 +1,7 @@
 Java stream classes
     > java.oi.InputStream
         > java.io.ByteArrayInputStream
-        > java.io.FileInputStream
+        > java.io.FileInputStream: ใช้สำหรับอ่านไฟล์
         > java.io.ObjectInputStream
         > java.io.SequenceInputStream
         > java.io.StringBufferInputStream
@@ -15,9 +15,12 @@ Java stream classes
 
     แต่ละ input stream จะขึ้นอยู่่กับแหล่งที่มาของข้อมูล
 
+    > java.io.OutputStream
+        > java.io.FileOutputStream: ใช้สำหรับเขียนไฟล์
+
 
     > java.io.Reader
-        > java.io.FileReader 
+        > java.io.FileReader: 
         > java.io.BufferedReader
             - java.io.LineNumberReader
         > java.io.CharArrayReader

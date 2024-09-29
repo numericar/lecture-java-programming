@@ -1,0 +1,11 @@
+ByteArrayInputStream
+    ทำหน้าที่อ่านข้อมูลจาก Array
+
+ByteArrayOutputStream
+    ทำหน้าที่เขียนข้อมูลลงไปใน Array
+
+จะทำงานกับ Array 
+source: [a, b, c, d, e, f, g, h]
+
+Byte array อาจมาจากได้หลายที่ เช่น มาจากคอมพิวเตอร์เครื่องอื่นที่ข้อมูลส่งมากับ internet
+โดยเราสามารถใช้การ stream ในการอ่านข้อมูลในรูปแบบ Byte array

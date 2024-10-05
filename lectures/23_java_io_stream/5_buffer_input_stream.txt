@@ -1,0 +1,9 @@
+BufferedStream and BufferedReader
+
+BufferedInputStream
+    อ่านข้อมูลจาก buffer
+    [File] ---> [FileInpuStream] ---> [BufferedInputStream] ---> [Program]
+
+ฺBufferedOutputStream
+    เขียนข้อมูลของไฟล์ลงไปใน buffer
+    [Program] ---> [ฺBufferedOutputStream] ---> [FileOutputStream] ---> [File]

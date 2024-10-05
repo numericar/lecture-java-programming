@@ -1,0 +1,9 @@
+Pipe Stream 
+    เป็นการที่ทำให้ข้อมูลไหลจาก a ไป n
+
+    [A] ---> [PipeOutputStream] ---> [Main] ---> [PipeInputStream] ---> [B]
+
+    PipeInputStream
+
+
+    PipeOutputStream

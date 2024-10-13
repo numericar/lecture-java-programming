@@ -1,0 +1,13 @@
+Interface Collection 
+    - add(E e); เพิ่มข้อมูลเข้ามาใน collection ทีละตัว
+    - addAll(Collection<E> e); เพิ่มข้อมูลเข้ามาใน collection ที่ละหลายตัว
+    - remove(object o); ลบข้อมูลออกจาก collection ทีละตัว
+    - removeAll(Collection<E> c); ลบข้อมูลออกจาก collection ทีละหลายตัว
+    - retainAll(Collection<E> c); ลบข้อมูลทั้งหมดออกจาก collection โดยเหลือไว้เพียงข้อมูลที่รับเข้ามา
+    - clear(); ลบข้อมูลทั้งหมดออกจาก collection 
+    - isEmpty(); ตรวจสอบว่า collection ว่างหรือไม่
+    - contains(Object o); เป็นการค้นหาข้อมูลใน collection
+    - containsAll(Collection<E> c); เป็นการค้นหาข้อมูลใน collection ว่ามีครงทั้งหมดหรือไม่
+    - equals(Object o);
+    - sige();
+

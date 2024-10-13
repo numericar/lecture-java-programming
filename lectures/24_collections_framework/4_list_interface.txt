@@ -1,0 +1,29 @@
+List Interface
+    Order collection of elements เป็น collection ที่มีวิธรการรจัดการกับ index
+
+    interface List extends Collection {
+        add(int index, E e); แทรกข้อมูลไปยังตำแหน่งที่ระบุ
+        addAll(int index, Collection<E> e);แทรกข้อมูลไปยังตำแหน่งที่ระบุ โดยจะทำการแทรกหลายข้อมูล
+        remove(int index); ลบข้อมูลออกจากตำแหน่งที่ระบุ
+        get(int index); ดึงข้อมูลในตำแหน่งที่ระบุ
+        set(int index, E e); replace ข้อมูลในคำแหน่งที่ระบุ
+        subList(int from, int to); เป็นการดึงช่วงของข้อมูลภายใน list
+        indexOf(Object c); search จากน้อยสุดไปมากสุด เป็นการดูว่าข้อมูลที่เราส่งข้อมูล อยู่ที่ index อะไร
+        lastIndexOf(Object c); search จากมากที่สุดไปน้อยที่สุด
+    }
+
+Set Interface
+    เหมือนกับ collection ทุกอย่าง ไม่มี method พิเศธ
+
+    interface Set extends Collection
+
+Quence Interface
+    เหมาะสำหรับเข้าก่อน ออกก่อน
+
+    interface Quence extends Collection {
+        add(E e); เพิ่มข้อมูลต่อท้าย
+        poll(); ลบข้อมูลตัวแรก และถ้าเป็นค่าว่างจะ return null
+        remove(); ถ้าเป็นค่าว่างจะ throws NoSuchElementException
+        peek(); ดูว่ามีข้อมูลที่ต่อแถวอยู่ไหม โดยยังไม่ลบออกจาก collection
+        element(); เหมือนกับ peek แต่เป็นการ throws exception
+    }

@@ -1,0 +1,9 @@
+Collection Frameworks
+    เป็นโครงสร้างข้อมูล (Data Structure)
+
+    Source of data 
+        Java program สามารถรับข้อมูลได้จากที่ต่าง ๆ เช่น
+            - keyboard
+            - file
+            - database
+            - remote computer

@@ -7,3 +7,21 @@ Collection Frameworks
             - file
             - database
             - remote computer
+
+Why collection are required ?
+    โดยปกติแล้วใน java array จะเป็นพื้นฐานของโครงสร้างข้อมูล
+    แต่มันมีข้อจำกัดตรงจำเป็นต้องระบุขนาดของ array ไว้ตั้งแต่แรกและต้องเป็นค่าคงที่เสมอ
+    ซึ่งนี่เป็นข้อเสีย ถ้าต้องทำงานในโลกตวามเป็นจริง
+
+    เราต้องการ Data Structure ที่สามารถเปลี่ยนขนาดได้ด้วยตัวมันเอง
+    ประกอบด้วย
+        > Variable sige collection
+            - ArrayList
+            - LinkedList
+
+        > Distinct Collection: ข้อมูลภายใน collection ไม่ซ้ำกัน
+            - Set
+        > Sorted Collection: ข้อมูลภายใน collection ที่เรียงลำดับกัน
+            - SortedSet
+
+    insert: เป็นการแทรกข้อมูลไปที่ตำแหน่งที่ระบุ โดยจะขยับข้อมูลที่เก็บอยู่ที่ตำแหน่งนั้นออกไปอีก 1 ตำแหน่ง

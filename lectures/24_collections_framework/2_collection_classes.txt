@@ -1,0 +1,30 @@
+Collection Classes in Java
+
+    Iterable: ทำให้สามารถวนซ้ำได้
+
+        Collection: ประกอบด้วยกลุ่มของข้อมูล
+
+            List: เป็นกลุ่มของข้อมูลที่สามารถเข้าถึงได้ด้วยตำแหน่ง (index) (Order of elements)
+                ArrayList: เหมือนกับ array ที่ไม่ต้องระบุขนาด
+                LinkedList: 
+                Vector: (legacy class from Java 1.1)
+                    Stack:
+
+            Quence: เป็นการจัดการชุดของข้อมูลแบบการเข้าคิว (First-in, First-out)
+                PriorityQuence: เรียงตามลำดับความสำคัญ
+                Deque:
+                ArrayDeque:
+
+            Set: ข้อมูลที่ถูกจัดเก็บจะไม่ซ้ำกัน
+                SortedSet: กลุ่มของข้อมูลที่ถูกจัดเรียง โดยมีข้อดีคือสามารถค้นหาข้อมูลได้เร็ว
+                    TreeSet
+                HashSet: 
+                LinkedHashSet:
+
+    Map: จัดเก็บชุดของข้อมูลในรูปแบบของ key: value
+        SortedMap:
+            TreeMap:
+        HashMap:
+        LinkedHashMap:
+        HashTable:
+        

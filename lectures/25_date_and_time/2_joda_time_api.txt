@@ -1,0 +1,10 @@
+JODA Time api
+    เกิดขึ้นใน Java 8 โดยมีการสร้างใหม่ เพราะ
+    
+    โดยปกติแล้วใน Date จะเป็นแบบ Date & Time 
+    โดยแบบใหม่จะจับทั้ง 2 แยกออกจากกันเป็น
+        - LocalDate: เก็บเฉพาะ date 
+        - LocalTime: เก็บเฉพาะ time 
+        - LocalDateTime: เก็บ date time
+
+    และ JODA API จะจัดเก็บเวลาในรูปแบบ secodes + nano secodes

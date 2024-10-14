@@ -1,0 +1,8 @@
+Linked List
+    เป็นโครงสร้างข้อมูลที่ข้อมูลจะจัดเก็บ pointer ของข้อมูลตัวถัดไปและก่อนหน้า
+    โดยข้อมูลเราจะเรีกยว่า node
+    [data]-[pointer_next]
+
+Double Linked List 
+    เหมือนกับ Linked List แต่เก็บ pointer ของตัวก่อนหน้าไว้ด้วย
+    [pointer_previos]-[data]-[pointer_next]

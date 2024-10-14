@@ -1,0 +1,24 @@
+ArrayDeque
+    สามารถแทรกและลบได้จากทั้ง 2 ด้านของ array
+    โดยสามารถ ลบตัวแรก และ เพิ่มตัวท้าย ได้
+    โดยสามารถทำงานได้รวดเร็วกว่า Stack
+
+    Head
+        Throw exception: อาจเกิด exception
+            addFirst(e): แทรกข้อมูลเข้าไปที่ตัวแรก
+            removeFirst(): ลบตัวแรก
+            getFirst()
+        Special Value: ไม่เกิด exception
+            offerFirst(e): แทรกข้อมูลเข้าไปที่ตัวแรก
+            pollFirst(): ลบตัวแรก
+            peekFirst()
+    
+    Tail 
+        Throw exception
+            addLast(e)
+            removeLast()
+            getLast()
+        Special Value
+            offerLast(e)
+            pollLast()
+            peekLast()

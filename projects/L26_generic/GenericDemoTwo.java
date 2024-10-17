@@ -11,6 +11,8 @@ public class GenericDemoTwo {
         myArr.append(10);
         myArr.append(20);
         myArr.display();
+
+        MyArrTwo<Integer, String> arr2 = new MyArrTwo<>();
     }
 }
 
@@ -41,4 +43,29 @@ class MyArr<T> {
             System.out.println(this.A[i]);
         }
     }
+}
+
+class MyArrTwo<T, K> {
+    @SuppressWarnings("unchecked")
+    T A[] = (T[]) new Object[10];
+
+    public int length = 0;
+
+    public void append(T v) {
+        this.A[length++] = v;
+    }
+
+    public void display() {
+        for (int i = 0; i < this.length; i++) {
+            System.out.println(this.A[i]);
+        }
+    }
+}
+
+class MyArrThree extends MyArr<String> {
+
+}
+
+class MyArrFour<T extends Number> {
+    
 }

@@ -19,3 +19,19 @@ Java Generics
     เราสามารถแก้ปัญหาดังกล่าวได้ โดยการใช้งาน Java Generics 
     โดยมันจะเป็น reference อะไรก็ได้ตามที่เราระบุ
     โดยจะทำให้ไม่สามารถสร้าง reference ด้วย type อื่นที่ไม่ได้ระบุได้อีก
+
+No Parameters  
+    ถ้าหากไม่ส่งอะไรเข้าไป จะ default ให้เป็น object
+
+Multiple Parameters
+    เป็นการสร้าง generic ที่รับ Parameters มากกว่า 2 ตัว
+
+Subtypes 
+    เป็น child class ที่สืบทอด class ที่เป็น generic โดยจะต้องระบุ
+    ชนิดข้อมูลในข้ันตอนการสืบทอด
+
+Bounded Types
+    เป็นการระบุว่า class ที่จะส่งมาให้ generic จะต้องเป็นรูปแบบใด
+    เช่น
+        class MyArray<T extends Number>
+        class ที่จะส่งมาให้ generic จะต้องเป็นคลาสที่สืบทอดความสามารถมาจาก Number

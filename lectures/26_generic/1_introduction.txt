@@ -1,0 +1,21 @@
+Java Generics
+    มีการนำมาใช้ใน Java 1.5
+
+    โดยปกติใน Java ทุก ๆ class จะสืบทอดความสามารถจาก class Object ทั้งหมด
+    ดังนั้นเราจึงสามารถใช้ Object มาเป็น reference ให้กับทุก ๆ class ได้
+
+    Object obj = new String("Hello World");
+    Object obj = new String("Hello");
+    // obj = new Integer(10);
+        
+        String str = (String)obj;
+        System.out.println(str);
+
+    แต่มีข้อจำกัดหลายอย่าง
+    เช่น
+        - อาจเกิดขอผิดพลาดระหว่างการ compile ได้สูง
+        - ไม่ได้รับคุณสมบัติที่ถูกต้องของ object
+    
+    เราสามารถแก้ปัญหาดังกล่าวได้ โดยการใช้งาน Java Generics 
+    โดยมันจะเป็น reference อะไรก็ได้ตามที่เราระบุ
+    โดยจะทำให้ไม่สามารถสร้าง reference ด้วย type อื่นที่ไม่ได้ระบุได้อีก

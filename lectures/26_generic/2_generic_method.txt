@@ -1,0 +1,14 @@
+Generic Methods
+    Methods 
+        เป็นการกำหนดชนิดข้อมูลของ Generic parameter ของ method
+
+    WildCard
+        ? หมายถึง ใช้เพื่อแทนที่ประเภทใด ๆ (any type) ในกรณีที่คุณไม่รู้ล่วงหน้าว่าควรใช้ประเภทใด
+        เช่ร List<?> list = new ArrayList<String>();
+
+    LowerBound
+        super หรือ class ที่จะนำมาใส่ Generic จะต้องมีคลาสแม่บนสุดที่สืบทอดมาตามที่กำหนด
+        เช่น void a(<T super Number> obj);
+
+    UpperBound
+        extend

@@ -12,3 +12,6 @@ Generic Methods
 
     UpperBound
         extend
+
+    สามารถสืบทอดจากหลาย interface ได้
+    เช่น MyArr<T extends A & B>

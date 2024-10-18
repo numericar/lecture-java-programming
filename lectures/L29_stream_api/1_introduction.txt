@@ -1,0 +1,10 @@
+Java Stream API
+    เป็นการประมวลผลข้อมูลผ่านการส่งข้อมูลให้ฟังก์ชันไปเรื่อย ๆ  (method chaining)
+
+    [stream source] -> [operation 1] -> [operation 2] -> [operation 3] -> [result]
+
+    map(Function<? super T, ? extends R>)
+        รับฟังก์ชันเข้ามาและส่งคืนผลลัพธ์
+
+    filter(Preducate<? super T> predicate)
+        Preducate จะคอยรอรับสิ่งที่เป็น boolean value function

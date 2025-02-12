@@ -51,9 +51,9 @@ class My implements Comparator<Integer> {
     @Override
     public int compare(Integer o1, Integer o2) {
         if (o1 < o2) {
-            return -1; // สลับตำแหน่ง [o1, o2] -> [o2, o1] 
+            return -1; // o1 ควรอยู่หน้า o2 ::: [o1, o2]
         } else if (o1 > o2) {
-            return 1; // ไม่ต้องเปลี่ยนแปลง
+            return 1; // o1 ควรอยู่หลัง o2 ::: [o1, o2] -> [o2, o1]
         } else {
             return 0; // ไม่ต้องเปลี่ยนแปลง
         }
